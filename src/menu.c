@@ -64,8 +64,8 @@ const u16 gUnknown_0860F074[] = INCBIN_U16("graphics/interface/860F074.gbapal");
 
 static const u8 sTextSpeedFrameDelays[] = 
 { 
-    [OPTIONS_TEXT_SPEED_SLOW] = 8, 
-    [OPTIONS_TEXT_SPEED_MID]  = 4, 
+    [OPTIONS_TEXT_SPEED_SLOW] = 1, 
+    [OPTIONS_TEXT_SPEED_MID]  = 1, 
     [OPTIONS_TEXT_SPEED_FAST] = 1 
 };
 
@@ -486,6 +486,7 @@ u8 GetPlayerTextSpeedDelay(void)
         gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_MID;
     speed = GetPlayerTextSpeed();
     return sTextSpeedFrameDelays[speed];
+	//return 1; // force instant text
 }
 
 u8 sub_81979C4(u8 a1)
