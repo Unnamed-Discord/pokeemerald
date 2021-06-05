@@ -231,8 +231,7 @@ static const struct MenuAction sItemMenuActions[] = {
 // these are all 2D arrays with a width of 2 but are represented as 1D arrays
 // ITEMMENUACTION_DUMMY is used to represent blank spaces
 static const u8 sContextMenuItems_ItemsPocket[] = {
-    ITEMMENUACTION_USE,         ITEMMENUACTION_GIVE,
-    ITEMMENUACTION_TOSS,        ITEMMENUACTION_CANCEL
+    ITEMMENUACTION_USE,         ITEMMENUACTION_GIVE
 };
 
 static const u8 sContextMenuItems_KeyItemsPocket[] = {
@@ -241,8 +240,7 @@ static const u8 sContextMenuItems_KeyItemsPocket[] = {
 };
 
 static const u8 sContextMenuItems_BallsPocket[] = {
-    ITEMMENUACTION_GIVE,        ITEMMENUACTION_DUMMY,
-    ITEMMENUACTION_TOSS,        ITEMMENUACTION_CANCEL
+    ITEMMENUACTION_GIVE,        ITEMMENUACTION_DUMMY
 };
 
 static const u8 sContextMenuItems_TmHmPocket[] = {
@@ -252,8 +250,7 @@ static const u8 sContextMenuItems_TmHmPocket[] = {
 
 static const u8 sContextMenuItems_BerriesPocket[] = {
     ITEMMENUACTION_CHECK_TAG,   ITEMMENUACTION_DUMMY,
-    ITEMMENUACTION_USE,         ITEMMENUACTION_GIVE,
-    ITEMMENUACTION_TOSS,        ITEMMENUACTION_CANCEL
+    ITEMMENUACTION_USE,         ITEMMENUACTION_GIVE
 };
 
 static const u8 sContextMenuItems_BattleUse[] = {
