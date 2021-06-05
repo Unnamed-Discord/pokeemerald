@@ -14,12 +14,6 @@ FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner:: @ 8201383
 	end
 
 FallarborTown_MoveRelearnersHouse_EventScript_AskTeachMove:: @ 82013A8
-	checkitem ITEM_HEART_SCALE, 1
-	compare VAR_RESULT, FALSE
-	goto_if_eq FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale
-	msgbox FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale
 	goto FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon
 	end
 
