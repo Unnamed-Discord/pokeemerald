@@ -102,7 +102,6 @@ static const struct YesNoFuncTable sShopPurchaseYesNoFuncs =
 static const struct MenuAction sShopMenuActions_BuySellQuit[] =
 {
     { gText_ShopBuy, {.void_u8=Task_HandleShopMenuBuy} },
-    { gText_ShopSell, {.void_u8=Task_HandleShopMenuSell} },
     { gText_ShopQuit, {.void_u8=Task_HandleShopMenuQuit} }
 };
 
